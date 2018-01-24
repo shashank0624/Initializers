@@ -12,6 +12,7 @@
 		8ABF7F182018694700FC911C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ABF7F162018694700FC911C /* Main.storyboard */; };
 		8ABF7F1A2018694700FC911C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8ABF7F192018694700FC911C /* Assets.xcassets */; };
 		8ABF7F1D2018694700FC911C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ABF7F1B2018694700FC911C /* LaunchScreen.storyboard */; };
+		8ABF7F2520186A9000FC911C /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABF7F2420186A9000FC911C /* File.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		8ABF7F192018694700FC911C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8ABF7F1C2018694700FC911C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8ABF7F1E2018694700FC911C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8ABF7F2420186A9000FC911C /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				8ABF7F122018694700FC911C /* AppDelegate.swift */,
 				8ABF7F142018694700FC911C /* ViewController.swift */,
+				8ABF7F2420186A9000FC911C /* File.swift */,
 				8ABF7F162018694700FC911C /* Main.storyboard */,
 				8ABF7F192018694700FC911C /* Assets.xcassets */,
 				8ABF7F1B2018694700FC911C /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8ABF7F152018694700FC911C /* ViewController.swift in Sources */,
+				8ABF7F2520186A9000FC911C /* File.swift in Sources */,
 				8ABF7F132018694700FC911C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
