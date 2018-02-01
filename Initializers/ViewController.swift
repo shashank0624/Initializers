@@ -13,8 +13,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // This will give current time (UTC)
        let now = Date()
         print("Current Date: \(now)")
+        
+        let userLocalizedTime = Date().description(with: .current)
+        print("User Current Time: \(userLocalizedTime)")
         
         let TwentyMinutesAfter = Date(timeIntervalSinceNow: 20*60)
         print("Twenty Minutes After time will be \(TwentyMinutesAfter)")
@@ -36,14 +40,29 @@ class ViewController: UIViewController {
         birthDateComponent.day = 6
         birthDateComponent.timeZone = TimeZone(abbreviation: "UTC")
         
-        let birthDate = calender.date(from: birthDateComponent)
+        guard let birthDate = calender.date(from: birthDateComponent) else{
+            return
+        }
         
         print("BirthDate: \(birthDate)")
+        
+        let timeStamp = Date().timeIntervalSince1970
+        print("TimeStamp: \(timeStamp)")
+        let currentTime = Date(timeIntervalSince1970: timeStamp)
+        print("Current Time : \(currentTime)")
+        
+        let dateFormatterForBirthDate = DateFormatter()
+        dateFormatterForBirthDate.dateFormat = "dd-MM-yyyy HH:mm"
+        let birthdateString = dateFormatterForBirthDate.string(from: currentTime)
+        print("Birthday Formatted Date: \(birthdateString)")
         
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "dd-MM-yyyy HH:mm"
         let dateInFormat = dateFormatter.string(from: Date())
         print("Formatted Date: \(dateInFormat)")
+        
+       
+        
     }
 
 }

@@ -36,10 +36,12 @@ class Person: Animal{
         let ageComponent = calender.dateComponents([.year], from: dateOfBirth as Date, to: Date())
         
         let age = ageComponent.year
-        
-        print("Age :\(age)")
+        guard let ageInYear = age else{
+            self.init(age: 0, name: name, dateOfBirth: dateOfBirth)
+            return
+        }
+        print("Age :\(ageInYear)")
         self.init(age: age!, name: name, dateOfBirth: dateOfBirth)
-        
     }
     
 }
